@@ -5,7 +5,8 @@
 
   <div [ngSwitch]="question.controlType">
     <input *ngSwitchCase="'textbox'" [formControlName]="question.key"
-      [id]="question.key" [type]="question.type" class="form-control"/>
+      [id]="question.key" [name]="question.key" [type]="question.type" [placeholder]="question.placeholder"
+      class="form-control"/>
 
     <select *ngSwitchCase="'dropdown'" [formControlName]="question.key"
       [id]="question.key" class="form-control">
@@ -15,7 +16,7 @@
     </select>
   </div>
 
-  <div class="errorMessage" *ngIf="!isValid">
+  <small class="text-danger" *ngIf="!isValid">
     {{question.label}} is required
-  </div>
+  </small>
 </div>

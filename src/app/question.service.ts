@@ -24,14 +24,16 @@ export class QuestionService {
       new TextboxQuestion({
         key: 'firstName',
         label: 'First Name',
-        value: ' Bombasto',
+        value: 'Bombasto',
         required: true,
+        placeholder: 'First Name',
         order: 1
       }),
       new TextboxQuestion({
         key: 'emailAddress',
         label: 'Email',
         type: 'email',
+        placeholder: 'example@mail.com',
         order: 2
       })
     ];
