@@ -17,7 +17,7 @@ export class QuestionService {
           {key: 'solid', value: 'Solid'},
           {key: 'great', value: 'Great'},
           {key: 'good',  value: 'Good'},
-          {key: 'unproven', value:'Unproven'}
+          {key: 'unproven', value: 'Unproven'}
         ],
         order: 3
       }),
