@@ -1,3 +1,5 @@
+/* T: Type */
+
 export class QuestionBase<T> {
   value: T;
   key: string;
@@ -6,6 +8,7 @@ export class QuestionBase<T> {
   order: number;
   controlType: string;
   type: string;
+  placeholder: string;
   options: {
     key: string,
     value: string
@@ -19,6 +22,7 @@ export class QuestionBase<T> {
     order?: number,
     controlType?: string,
     type?: string
+    placeholder?: string
   }) {
     this.value = options.value;
     this.key = options.key || '';
@@ -27,5 +31,6 @@ export class QuestionBase<T> {
     this.order = options.order === undefined ? 1 : options.order;
     this.controlType = options.controlType || '';
     this.type = options.type || '';
+    this.placeholder = options.placeholder || '';
   }
 }

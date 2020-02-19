@@ -17,21 +17,23 @@ export class QuestionService {
           {key: 'solid', value: 'Solid'},
           {key: 'great', value: 'Great'},
           {key: 'good',  value: 'Good'},
-          {key: 'unproven', value:'Unproven'}
+          {key: 'unproven', value: 'Unproven'}
         ],
         order: 3
       }),
       new TextboxQuestion({
         key: 'firstName',
         label: 'First Name',
-        value: ' Bombasto',
+        value: 'Bombasto',
         required: true,
+        placeholder: 'First Name',
         order: 1
       }),
       new TextboxQuestion({
         key: 'emailAddress',
         label: 'Email',
         type: 'email',
+        placeholder: 'example@mail.com',
         order: 2
       })
     ];
